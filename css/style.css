@@ -24,6 +24,16 @@ use the fonts in other ways in the font hierarchy etc. */
   --primary-font: "Open Sans", sans-serif;
   --secondary-font: "Droid Serif", serif;
   --main-text-color: #000;
+  --font_h1: "Archivo";
+  --font_h2_h3: "Jost";
+  --font_h4_p: "Spartan";
+  --font_a_link: "IBM Plex Sans";
+  --color_1: #5c160f;
+  --color_2: #f53723;
+  --color_3: #b32c1d;
+  --color_4: #fca8aa;
+  --color_5: #5c2f2a;
+  --color_6: #db3623;
 
   --white-space: 1rem;
 
@@ -69,24 +79,28 @@ footer {
   text-transform: uppercase;
   letter-spacing: -2px;
   padding-right: 0.75em;
-  font-weight: bold;
+  font-weight: lighter;
   color: white;
+  font-family: var(--font_h1);
 }
 
 .header-wrapper h2 {
   font-size: 1.6em;
   color: rgba(255, 255, 255, 0.95);
-  font-weight: bold;
+  font-weight: lighter;
   margin: var(--white-space) 0;
+  font-family: var(--font_h2_h3);
 }
 
 .header-wrapper h3 {
   font-size: 1.2rem;
-  font-style: italic;
+  /* font-style: italic; */
+  font-family: var(--font_h2_h3);
 }
 
 .header-wrapper h4 {
   font-size: 0.8rem;
+  font-family: var(--font_h4_p);
 }
 
 main {
@@ -99,10 +113,11 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 1.3rem;
-  color: #777;
+  color: rgb(0, 0, 0);
   margin: 0.5rem 0;
+  font-family: var(--font_a_link);
 }
 
 ul {
@@ -121,23 +136,23 @@ ul li:last-child {
 }
 
 .color-swatch-1 {
-  background-color: var(--bg-color);
+  background-color: var(--color_1);
 }
 
 .color-swatch-2 {
-  background-color: var(--link-color);
+  background-color: var(--color_2);
 }
 
 .color-swatch-3 {
-  background-color: var(--link-hover-color);
+  background-color: var(--color_3);
 }
 
 .color-swatch-4 {
-  background-color: var(--color-4);
+  background-color: var(--color_4);
 }
 
 .color-swatch-5 {
-  background-color: var(--color-5);
+  background-color: var(--color_5);
 }
 
 .textures li {
@@ -221,19 +236,26 @@ button:active {
 
 .h1-sample {
   font-size: 2.4rem;
-  font-weight: bold;
+  font-weight: lighter;
+  /* font-family: Archivo; */
+  font-family: var(--font_h1);
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
-  font-style: italic;
+  /* font-family: var(--secondary-font); */
+  /* font-family: Jost; */
+
   font-size: 1.25rem;
+  font-weight: lighter;
+  font-family: var(--font_h2_h3);
 }
 
 p.typography-sample {
-  font-family: var(--secondary-font);
+  /* font-family: var(--secondary-font); */
   line-height: 1.5;
   max-width: 960px;
+  font-family: var(--font_h4_p);
+  font-weight: lighter;
 }
 
 strong {
@@ -245,11 +267,12 @@ em {
 }
 
 a {
-  font-family: var(--primary-font);
+  /* font-family: var(--primary-font); */
   color: var(--link-color);
   font-weight: bold;
   text-decoration: none;
   transition: all 0.2s;
+  font-family: var(--font_a_link);
 }
 
 a:hover {
